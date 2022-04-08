@@ -15,8 +15,7 @@ public class MyHashMap<K, V>
 
     public void add(K key, V value) {
         MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.search(key);
-        if (myMapNode == null)
-        {
+        if (myMapNode == null) {
             myMapNode = new MyMapNode<>(key, value);
             this.myLinkedList.append(myMapNode);
         } else {
